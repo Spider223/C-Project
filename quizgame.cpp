@@ -1,14 +1,35 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
+
+int Guess;
+int Total;
+
+class Question {
+    private:
+        string Question_Text;
+        string Answer_1;
+        string Answer_2;
+        string Answer_3;
+        string Answer_4;
+        
+        int Correct_Answer;
+        int Question_Score;
+
+    public:
+        void setValues(string, string, string, string, string, int, int);
+        void askQuestion();
+
+};
 
 int main()
 {
-    cout<<"\t\t\t========================\n";
-    cout<<"\t\t\t**** Welcome to Quiz Game ****\n";
-    cout<<"\t\t\t========================\n";
-    cout<<"***Developed by Madhan Pokharel***\n";
-    cout<<"===============================\n";
+    cout<< "\n\n\t\t\t\t Welcome to Quiz Game"<<endl;
+    cout<< "\n\n\t\t\t\t Developed by Madhan Pokharel"<<endl;
 
-    cout<<
-
+    
 }
+
+
+
