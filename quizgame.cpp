@@ -4,7 +4,7 @@
 using namespace std;
 
 int Guess;
-int Total;
+int Total=0;
 
 class Question {
     private:
@@ -56,21 +56,16 @@ void Question :: askQuestion()
         cout << endl;
         cout << "Correct !" << endl;
  
-        Total = Total + Question_Score;
-        cout << "Score = " << Question_Score
-             << " out of "
-             << Question_Score
-             << "!" << endl;
+        Total++ ;
+        cout << "Score = " << Total << "!" << endl;
         cout << endl;
     }
  
     else {
         cout << endl;
         cout << "Wrong !" << endl;
-        cout << "Score = 0"
-             << " out of "
-             << Question_Score
-             << "!" << endl;
+        cout << "Score = " <<Total << endl;
+           
         cout << "Correct answer = "
              << Correct_Answer
              << "." << endl;
@@ -82,19 +77,22 @@ void Question :: askQuestion()
 
 int main()
 {
+    cout<<"\n\n\t\t\t\t==================================="<<endl;
     cout<< "\n\n\t\t\t\t Welcome to Quiz Game"<<endl;
     cout<< "\n\n\t\t\t\t Developed by Madhan Pokharel"<<endl;
-    cout<< "please press enter to continue"<<endl;
+    cout<<"\n\n\t\t\t\t==================================="<<endl;
+
+    cout<< "\nPlease! Press Enter to Continue"<<endl;
 
     cin.get();
 
     string Name;
     string Respond;
 
-    cout<< "what is your name?"<<endl;
+    cout<< "Enter Your Name:"<<endl;
     cin >> Name;
 
-    cout<<"Are you ready to take the quiz "<<Name<<"? yes/no"<<endl;
+    cout<<"\nAre you ready to take the quiz "<<Name<<"? yes/no"<<endl;
     cin >> Respond;
     
     if (Respond == "yes") {
@@ -114,10 +112,15 @@ int main()
     Question q5;
     Question q6;
 
-    q1.setValues("what is your name?", "hello", "hi", "bye", "goodbye",
-                   3,10 );
+    q1.setValues("Which country has the highest life expectancy ?", "Canada",
+                 "Honk kong", "China","UK",2,10 );
+
     q1.askQuestion();
-    cout<<"Total Score ="<< Total << endl;
+
+    q2.setValues("What is the capital city of Finland?", "Oslo", "Warsaw", "Wrllington", "Helsinki", 4, 10);
+    q2.askQuestion();
+
+    cout<<"Total Score = "<< Total << endl;
 
     return 0;
 
