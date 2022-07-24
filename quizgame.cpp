@@ -112,14 +112,21 @@ int main()
     Question q5;
     Question q6;
 
-    q1.setValues("Which country has the highest life expectancy ?", "Canada",
-                 "Honk kong", "China","UK",2,10 );
-
+    q1.setValues("Which country has the highest life expectancy ?", "Canada", "Honk kong", "China","UK",2,10 );
     q1.askQuestion();
 
-    q2.setValues("What is the capital city of Finland?", "Oslo", "Warsaw", "Wrllington", "Helsinki", 4, 10);
+    q2.setValues("What is the capital city of Finland?", "Oslo", "Warsaw", "Wellington", "Helsinki", 4, 10);
     q2.askQuestion();
 
+    q3.setValues("Which of the following is not an international organisation?", "FIFA", "NATO", "ASEAN", "FBI", 4,10);
+    q3.askQuestion();
+
+    q4.setValues("Which of the following actors was the first one to play James Bond?", "Timothy Dalton", "Roger Moore", "Sean Connery", "George Lazenby", 3, 10);
+    q4.askQuestion();
+
+    q5.setValues("The two biggest exportes of beers in Europe are Germany and ...", "Spain", "France", "Italy", "Belgium",4,10);
+    q5.askQuestion();
+    
     cout<<"Total Score = "<< Total << endl;
 
     return 0;
