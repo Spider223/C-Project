@@ -111,6 +111,10 @@ int main()
     Question q4;
     Question q5;
     Question q6;
+    Question q7;
+    Question q8;
+    Question q9;
+    Question q10;
 
     q1.setValues("Which country has the highest life expectancy ?", "Canada", "Honk kong", "China","UK",2,10 );
     q1.askQuestion();
@@ -127,6 +131,24 @@ int main()
     q5.setValues("The two biggest exportes of beers in Europe are Germany and ...", "Spain", "France", "Italy", "Belgium",4,10);
     q5.askQuestion();
     
+    q6.setValues("The great Victoria Desert is located in ?", "Canada", "West Africa", "Australia", "North America",3,10);
+    q6.askQuestion();
+
+    q7.setValues("Which of the following is used in pencils ?", "Graphite", "Silicon", "Charcoal", "Phosphorous",1,10);
+    q7.askQuestion();
+
+    q8.setValues("What Galileo invented?", "Barometer", "Pendulum clock", "Microscope", "Thermometer",4,10);
+    q8.askQuestion();
+
+    q9.setValues("Which one is the smallest ocean in the world?", "Indian", "Pacific", "Atlantic", "Artic",4,10);
+    q9.askQuestion();
+
+    q10.setValues("In which country, white elephant is found?", "India", "Sri Lanka", "Thailand", "Malaysia",3,10);
+    q10.askQuestion() ;
+
+
+
+
     cout<<"Total Score = "<< Total << endl;
 
     return 0;
